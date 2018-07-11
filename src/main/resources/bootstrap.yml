@@ -1,0 +1,9 @@
+#读取config server的配置，则在此名为bootstrap.yml中定义，如果使用远程配置打开pom.xml中的spring-cloud-starter-config依赖
+#spring:
+#  application:
+#    name: config-client
+#  cloud:
+#    config:
+#      uri: http://localhost:8769
+#  profiles:
+#    active: dev

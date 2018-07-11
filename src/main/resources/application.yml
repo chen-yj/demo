@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring_cloud_demo #应用名称
+  profiles:
+    active: dev #配置profile，对应到相应的application-dev.yml配置文件，profile配置文件里面配置可以覆盖application.yml里面的配置
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/ #eureka client配置eureka server的地址
+
+its:
+  name: gowa
+  age: 3
+my:
+  name: chenyj
+  age: 30
+  uuid: ${random.uuid} #配置文件中可配置随机值，其他随机值配置上网搜索
